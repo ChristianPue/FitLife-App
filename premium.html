@@ -16,9 +16,6 @@
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-
-    <!-- Load map styles -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 <!--
     
 TemplateMo 559 Zay Shop
@@ -30,6 +27,11 @@ https://templatemo.com/tm-559-zay-shop
 
 <body>
     <!-- Start Top Nav -->
+    
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
@@ -112,81 +114,89 @@ https://templatemo.com/tm-559-zay-shop
     </div>
 
 
-    <!-- Start Content Page -->
-    <div class="container-fluid bg-light py-5">
-        <div class="col-md-6 m-auto text-center">
-            <h1 class="h1">Contáctanos</h1>
+
+    <!-- Start Content -->
+    <div class="versiones">
+        <h1>Versión Gratuita y Premium</h1>
+        <p>La versión gratuita posee todas las características ya mencionadas. Sin embargo, esta posee ciertas funciones específicas para ciertas personas. Estas serían las siguientes:</p>
+        
+        <div class="version">
+            <div class="flyer">
+                <h2>Gratis</h2>
+                <ul>
+                    <li>Acceso a contenido educativo básico</li>
+                    <li>Participación en desafíos y recompensas</li>
+                    <li>Grupos y comunidades</li>
+                    <li>Seguimiento básico del progreso</li>
+                    <!-- Agrega más características aquí -->
+                </ul>
+            </div>
+
+            <div class="flyer">
+                <h2>Premium</h2>
+                <ul>
+                    <li>Integración con dispositivos de salud</li>
+                    <li>Webinars y charlas en vivo con expertos</li>
+                    <li>Soporte multidisciplinario</li>
+                    <!-- Agrega más características aquí -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Start Funcionalidades -->
+    <div class="funcionalidades" id="funcionalidades-fitlife">
+        <h1>Sobre las funcionalidades</h1>
+
+        <div class="funcionalidad">
+            <h2>Plan nutricional personalizado</h2>
+            <p>Diseña y revisa cada receta por profesionales de la salud para cumplir con estándares nutricionales y mantener un límite máximo de calorías.</p>
+        </div>
+
+        <div class="funcionalidad">
+            <h2>Contenido educativo</h2>
+            <p>Incluye una biblioteca de recetas saludables, planes de comidas, videos de ejercicios y artículos educativos.</p>
+        </div>
+
+        <div class="funcionalidad">
+            <h2>Interacción social</h2>
             <p>
-                En FitLife, valoramos la comunicación y estamos aquí para ayudarte en cada paso de tu viaje hacia una vida más saludable. Si tienes preguntas, sugerencias o necesitas asistencia, no dudes en ponerte en contacto con nosotros.
+                Permite unirse a grupos y comunidades para compartir experiencias y progresos.<br>
+                Facilita la participación en desafíos grupales y la integración con redes sociales como Facebook para compartir logros.
+            </p>
+        </div>
+
+        <div class="funcionalidad">
+            <h2>Comidas regionales</h2>
+            <p>Proporciona recetas típicas de cada región, ajustadas a la disponibilidad de alimentos locales.</p>
+        </div>
+
+        <div class="funcionalidad">
+            <h2>Integración con dispositivos de salud</h2>
+            <p>
+                Sincronización con relojes inteligentes, monitores de actividad física y aplicaciones de salud.<br>
+                Seguimiento en tiempo real de datos como pasos, calorías quemadas, frecuencia cardíaca y patrones de sueño.
+            </p>
+        </div>
+
+        <div class="funcionalidad">
+            <h2>Soporte multidisciplinario</h2>
+            <p>
+                Acceso a consultas con profesionales de la salud, como nutricionistas, entrenadores personales y psicólogos.<br>
+                Orientación personalizada para abordar necesidades específicas de salud y bienestar.<br>
+                Programas de coaching y asesoramiento continuo.
+            </p>
+        </div>
+
+        <div class="funcionalidad">
+            <h2>Seguridad y privacidad</h2>
+            <p>
+                Garantiza la protección de datos personales y de salud, cumpliendo con regulaciones como GDPR o ISO 27001.<br>
+                Incluye encriptación de datos y opciones para que los usuarios gestionen sus configuraciones de privacidad.
             </p>
         </div>
     </div>
-
-    <div id="mapid" style="width: 100%; height: 500px;"></div>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-    <script>
-        var mymap = L.map('mapid').setView([-23.013104, -43.394365], 13);
-
-        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-            maxZoom: 18,
-            attribution: 'FitLife App | Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-                '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            id: 'mapbox/streets-v11',
-            tileSize: 512,
-            zoomOffset: -1
-        }).addTo(mymap);
-
-        // Marcador 1: Gimnasio
-        L.marker([-23.013104, -43.394365]).addTo(mymap)
-            .bindPopup("<b>Gimnasio FitLife</b><br />El mejor equipo y entrenadores en la ciudad.").openPopup();
-
-        // Marcador 2: Centro de Nutrición
-        L.marker([-23.023104, -43.384365]).addTo(mymap)
-            .bindPopup("<b>Centro de Nutrición FitLife</b><br />Consultas con nutricionistas especializados.").openPopup();
-
-        // Marcador 3: Parque para Ejercicios al Aire Libre
-        L.marker([-23.033104, -43.374365]).addTo(mymap)
-            .bindPopup("<b>Parque FitLife</b><br />Área equipada para entrenamientos al aire libre.").openPopup();
-
-        // Deshabilitar zoom de rueda y tacto
-        mymap.scrollWheelZoom.disable();
-        mymap.touchZoom.disable();
-    </script>
-    <!-- End Map -->
-
-    <!-- Start Contact -->
-    <div class="container py-5">
-        <div class="row py-5">
-            <form class="col-md-9 m-auto" method="post" role="form">
-                <div class="row">
-                    <div class="form-group col-md-6 mb-3">
-                        <label for="inputname">Nombre</label>
-                        <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Nombre">
-                    </div>
-                    <div class="form-group col-md-6 mb-3">
-                        <label for="inputemail">Email</label>
-                        <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Email">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="inputsubject">Sujeto</label>
-                    <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Sujeto">
-                </div>
-                <div class="mb-3">
-                    <label for="inputmessage">Mensaje</label>
-                    <textarea class="form-control mt-1" id="message" name="message" placeholder="Mensaje" rows="8"></textarea>
-                </div>
-                <div class="row">
-                    <div class="col text-end mt-2">
-                        <button type="submit" class="btn btn-success btn-lg px-3">Enviar</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <!-- End Contact -->
-
 
     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">

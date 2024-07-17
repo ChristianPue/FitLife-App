@@ -2,3 +2,101 @@
 Custom Css
 */
 /* Caja donde contiene el nombre el icono del login */
+
+.mas-que-un-proyecto-texto
+{
+    padding-top: 25px;
+}
+
+.versiones {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.versiones h1 {
+    text-align: center;
+    color: #333;
+}
+
+.versiones p {
+    text-align: center;
+    color: #666;
+}
+
+.version {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.flyer {
+    width: 45%;
+    padding: 20px;
+    background-color: #06ac00;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.flyer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.flyer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flyer ul li {
+    background: white;
+    color: #06ac00;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.flyer ul li:hover {
+    background: #06ac00;
+    color: white;
+}
+
+/**/
+
+.funcionalidades {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.funcionalidades h1 {
+    text-align: center;
+    padding: 25px;
+    color: #333;
+}
+
+.funcionalidad {
+    margin-bottom: 20px;
+}
+
+.funcionalidad h2 {
+    color: #06ac00;
+    margin-bottom: 10px;
+}
+
+.funcionalidad p {
+    color: #666;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #06ac00;
+    border-radius: 4px;
+}
